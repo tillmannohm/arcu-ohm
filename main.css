@@ -99,7 +99,7 @@ img {
 
 .references {
     font-size: smaller;
-    /* display: inline-block; */
+    display: inline-block;
 }
 
 img.logos {
