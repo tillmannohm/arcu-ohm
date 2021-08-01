@@ -691,6 +691,13 @@ img.center {
   border-radius: 3px;
   border: 0;
   touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .lt-ie9 .tns-controls > [aria-controls] {
   line-height: 2.5em;
@@ -723,6 +730,13 @@ img.center {
   background: #ddd;
   border: 0;
   touch-action: manipulation;
-
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .tns-nav > .tns-nav-active { background: #152B79; }
+
