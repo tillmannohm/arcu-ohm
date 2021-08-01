@@ -687,7 +687,7 @@ img.center {
     font-weight: bold;
   /* font-size: 18px; */
   color: #152B79;
-  background:none;
+  background: red;
   border-radius: 3px;
   border: 0;
   touch-action: manipulation;
@@ -729,6 +729,8 @@ img.center {
   /* border-radius: 50%; */
   background: #ddd;
   border: 0;
+  background: red;
+
   touch-action: manipulation;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
