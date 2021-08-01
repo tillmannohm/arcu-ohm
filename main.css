@@ -677,7 +677,18 @@ img.center {
 .controls .next { right: 0; }
 .controls li:hover { background: #f2f2f2; }
 
-.tns-controls { text-align: right; margin-bottom: 10px; }
+.tns-controls { 
+    text-align: right; 
+    margin-bottom: 10px; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .tns-controls [aria-controls] {
   font-size: 15px;
   /* margin: 0 5px; */
@@ -687,7 +698,6 @@ img.center {
     font-weight: bold;
   /* font-size: 18px; */
   color: #152B79;
-  background: green;
   /* border-radius: 3px; */
   border: 0;
   touch-action: manipulation;
@@ -707,13 +717,6 @@ img.center {
 .tns-controls [disabled] { 
   color: #999999;
   cursor: default !important;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
 }
 .tns-nav {
   text-align: left;

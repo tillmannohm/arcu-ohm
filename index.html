@@ -50,19 +50,19 @@
     <div class="bar transparent">
       <a class="bar-item button padding-large hide-medium hide-large" href="javascript:void(0)" onclick="closeMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a class="bar-item button padding-large" onclick="window.scrollTo(0,0); animateLogo(0)">HOME</a>
-      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('ABOUT').scrollIntoView(true); scrollWait = true; animateLogo(1)">ABOUT</a>
-      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('METHODS').scrollIntoView(true); scrollWait = true; animateLogo(1)">CONCEPT & METHODS</a>
-      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('SHOWCASE').scrollIntoView(true); scrollWait = true; animateLogo(1)">SHOWCASE</a>
-      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('CONTACT').scrollIntoView(true); scrollWait = true; animateLogo(1)">CONTACT</a>
+      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('ABOUT').scrollIntoView(true) ">ABOUT</a>
+      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('METHODS').scrollIntoView(true) ">CONCEPT & METHODS</a>
+      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('SHOWCASE').scrollIntoView(true) ">SHOWCASE</a>
+      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('CONTACT').scrollIntoView(true) ">CONTACT</a>
     </div>
   </div>
   
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="navDemo" class="bar-block hide hide-large hide-medium head transparent" style="margin-top:46px">
-    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('ABOUT').scrollIntoView(true); scrollWait = true; animateLogo(1)">ABOUT</a>
-    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('METHODS').scrollIntoView(true); scrollWait = true; animateLogo(1)">CONCEPT & METHODS</a>
-    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('SHOWCASE').scrollIntoView(true); scrollWait = true; animateLogo(1)">SHOWCASE</a>
-    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('CONTACT').scrollIntoView(true); scrollWait = true; animateLogo(1)">CONTACT</a>
+    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('ABOUT').scrollIntoView(true) ">ABOUT</a>
+    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('METHODS').scrollIntoView(true) ">CONCEPT & METHODS</a>
+    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('SHOWCASE').scrollIntoView(true) ">SHOWCASE</a>
+    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('CONTACT').scrollIntoView(true) ">CONTACT</a>
   </div>
   
 <!-- Page content -->
@@ -384,36 +384,42 @@
         },
     });
 
-    var winHeight = document.getElementById("graph-container").clientHeight + 91;
+    var winHeight = document.getElementById("graph-container").clientHeight + 91 + 60;
     var winWidth = document.getElementById("graph-container").clientWidth;
 
     var support = CSS.supports("backdrop-filter: blur(2px)") | CSS.supports("-webkit-backdrop-filter: blur(2px)")
-
 
     function clamp(value, min, max) {
         return Math.min(Math.max(value, min), max);
     }
 
     var scrollWait = false;
+
     window.onscroll = function(e) {
-        if (scrollWait == false) {
-            if (this.oldScroll > this.scrollY){
-                if (this.scrollY < 200) {
-                    animateLogo(0);
-                } else {
-                    scrollLogo(0);
-                }
-            };
-            if (this.oldScroll < this.scrollY){
-                if (support == 0) {document.getElementById("graph-container").style.filter = "blur(2px)"};
+    console.log(this.scrollY)
+    if (scrollWait == false) {
+        if (this.oldScroll > this.scrollY){
+            if (this.scrollY < 200) {
+                animateLogo(0);
+            } else {
+                scrollLogo(0);
+            }
+        };
+        if (this.oldScroll < this.scrollY){
+            if (support == 0) {document.getElementById("graph-container").style.filter = "blur(2px)"};
+            if (this.scrollY > 500) {
+                animateLogo(1);
+            }
+            else {
                 scrollLogo(1);
-            };
+            }
         }
+    };
         this.oldScroll = this.scrollY;
     };
     
     function animateLogo(direction) {
-        // scrollWait = ?;
+        scrollWait = true;
         sigma.plugins.animate(
             s,
             {
@@ -484,7 +490,6 @@ function closeMenu() {
     x.className += " show";
   } else { 
     x.className = x.className.replace(" show", "");
-    scrollWait = true;
     animateLogo(1);
   }
 }
@@ -615,7 +620,7 @@ var slider_res = tns({
         }
     }
   });
-document.getElementsByClassName("sigma-svg")[0].style.height = String(document.getElementById("graph-container").clientHeight + 91) + "px";
+document.getElementsByClassName("sigma-svg")[0].style.height = String(document.getElementById("graph-container").clientHeight + 91 + 60) + "px";
 
 </script>
 
