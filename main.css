@@ -687,17 +687,10 @@ img.center {
     font-weight: bold;
   /* font-size: 18px; */
   color: #152B79;
-  background: red;
-  border-radius: 3px;
+  background: green;
+  /* border-radius: 3px; */
   border: 0;
   touch-action: manipulation;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
 }
 .lt-ie9 .tns-controls > [aria-controls] {
   line-height: 2.5em;
@@ -714,6 +707,13 @@ img.center {
 .tns-controls [disabled] { 
   color: #999999;
   cursor: default !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .tns-nav {
   text-align: left;
@@ -729,16 +729,6 @@ img.center {
   /* border-radius: 50%; */
   background: #ddd;
   border: 0;
-  background: red;
-
-  touch-action: manipulation;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
 }
 .tns-nav > .tns-nav-active { background: #152B79; }
 
