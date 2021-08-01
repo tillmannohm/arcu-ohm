@@ -1,7 +1,6 @@
 body {
     font-family: 'Avenir','Leelawadee UI','Trebuchet MS',sans-serif;
     background-color: #FFFDF2;
-    touch-action: manipulation;
 }
 
 html, body {
@@ -691,6 +690,7 @@ img.center {
   background:none;
   border-radius: 3px;
   border: 0;
+  touch-action: manipulation;
 }
 .lt-ie9 .tns-controls > [aria-controls] {
   line-height: 2.5em;
@@ -722,5 +722,7 @@ img.center {
   /* border-radius: 50%; */
   background: #ddd;
   border: 0;
+  touch-action: manipulation;
+
 }
 .tns-nav > .tns-nav-active { background: #152B79; }
