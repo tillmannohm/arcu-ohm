@@ -695,6 +695,7 @@ img.center {
   /* border-radius: 3px; */
   border: 0;
   touch-action: manipulation;
+  outline: none;
 }
 .lt-ie9 .tns-controls > [aria-controls] {
   line-height: 2.5em;
@@ -707,10 +708,12 @@ img.center {
   text-align: center;
   background: transparent;
   border: 0;
+  outline: none;
 }
 .tns-controls [disabled] { 
   color: #999999;
   cursor: default !important;
+  outline: none;
 }
 .tns-nav {
   text-align: left;

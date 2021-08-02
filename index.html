@@ -530,7 +530,7 @@ window.onclick = function(event) {
 var slider_exh = tns({
     container: '.slider-exh',
     controlsText: ['&#10094; prev','next &#10095;'],
-    // swipeAngle:false,
+    swipeAngle:40,
     preventScrollOnTouch:'auto',
     slideBy: "page",
     navPosition: 'bottom',
@@ -570,7 +570,7 @@ var slider_tls = tns({
 var slider_res = tns({
     container: '.slider-res',
     controlsText: ['&#10094; prev','next &#10095;'],
-    swipeAngle:10,
+    swipeAngle:40,
     preventScrollOnTouch:'auto',
     slideBy: "page",
     navPosition: 'bottom',
@@ -590,7 +590,8 @@ var slider_res = tns({
   var slider_fund = tns({
     container: '.slider-fund',
     controlsText: ['&#10094; Funding','Clients &#10095;'],
-   
+    swipeAngle:40,
+    preventScrollOnTouch:'auto',
     slideBy: "page",
     navPosition: 'bottom',
     controlsPosition: 'bottom',
@@ -609,7 +610,8 @@ var slider_res = tns({
   var slider_methods = tns({
     container: '.slider-methods',
     controlsText: ['&#10094; back','continue &#10095;'],
-   
+    swipeAngle:40,
+    preventScrollOnTouch:'auto',
     slideBy: "page",
     navPosition: 'bottom',
     controlsPosition: 'bottom',
