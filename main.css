@@ -680,8 +680,6 @@ img.center {
 .tns-controls { 
     text-align: right; 
     margin-bottom: 10px; 
-    box-shadow:none;
-
 }
 
 .tns-controls [aria-controls] {
@@ -697,12 +695,9 @@ img.center {
   /* border-radius: 3px; */
   border: 0;
   touch-action: manipulation;
-  box-shadow:none;
-
 }
 .lt-ie9 .tns-controls > [aria-controls] {
   line-height: 2.5em;
-  box-shadow:none;
 }
 [data-action] {
   display: block;
