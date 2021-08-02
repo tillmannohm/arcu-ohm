@@ -680,6 +680,8 @@ img.center {
 .tns-controls { 
     text-align: right; 
     margin-bottom: 10px; 
+    outline: none;
+
 }
 
 .tns-controls [aria-controls] {
