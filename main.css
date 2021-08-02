@@ -680,13 +680,8 @@ img.center {
 .tns-controls { 
     text-align: right; 
     margin-bottom: 10px; 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
+    box-shadow:none;
+
 }
 
 .tns-controls [aria-controls] {
@@ -698,12 +693,16 @@ img.center {
     font-weight: bold;
   /* font-size: 18px; */
   color: #152B79;
+  background: 0;
   /* border-radius: 3px; */
   border: 0;
   touch-action: manipulation;
+  box-shadow:none;
+
 }
 .lt-ie9 .tns-controls > [aria-controls] {
   line-height: 2.5em;
+  box-shadow:none;
 }
 [data-action] {
   display: block;
