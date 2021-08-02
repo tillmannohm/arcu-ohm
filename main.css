@@ -20,6 +20,7 @@ a {
     background-color: transparent;
     color: #152B79;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:active,a:hover {
@@ -681,7 +682,9 @@ img.center {
     text-align: right; 
     margin-bottom: 10px; 
     outline: none;
-
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .tns-controls [aria-controls] {
@@ -696,8 +699,6 @@ img.center {
   background: 0;
   /* border-radius: 3px; */
   border: 0;
-  touch-action: manipulation;
-  outline: none;
 }
 .lt-ie9 .tns-controls > [aria-controls] {
   line-height: 2.5em;
@@ -710,12 +711,11 @@ img.center {
   text-align: center;
   background: transparent;
   border: 0;
-  outline: none;
 }
 .tns-controls [disabled] { 
-  color: #999999;
-  cursor: default !important;
-  outline: none;
+    display: none;
+  /* color: #999999;
+  cursor: default !important; */
 }
 .tns-nav {
   text-align: left;
@@ -734,3 +734,11 @@ img.center {
 }
 .tns-nav > .tns-nav-active { background: #152B79; }
 
+.embed-container {
+    float: right;
+  }
+
+.vp-center {
+    justify-content: left;
+    
+  }
