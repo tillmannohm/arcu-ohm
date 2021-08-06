@@ -714,7 +714,7 @@ img.center {
   border: 0;
 }
 .tns-controls [disabled] { 
-    display: none;
+    visibility: hidden;
   /* color: #999999;
   cursor: default !important; */
 }
