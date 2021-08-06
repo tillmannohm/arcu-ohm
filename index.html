@@ -84,7 +84,7 @@
                 <br><br>
                 Tillmann Ohm is an artist and creative computational developer with a special focus on technology-driven artistic research and algorithmic art curation. He combines network science, machine learning and digital archives with exhibition-making to develop experimental tools for curating art and engaging with cultural artefacts.
                 <br><br>
-                Ohm studied fine arts at the historic Bauhaus University Weimar in Germany, where he developed the algorithmic research and art curation system ARCU as part of an artistic project on computational research in the field of artificial intelligence in contemporary art. ARCU&OHM graduated from Bauhaus University in 2018 with a jointly generated thesis titled »The Artist's Machine«. Since 2020, Tillmann Ohm continues to develop ARCU and other curatorial experiments as a PhD Research Fellow within the EU-funded project Cultural Data Analytics (CUDAN) and the School of Digital Technologies at Tallinn University in Estonia.            </div>
+                Ohm studied fine arts at the historic Bauhaus University Weimar in Germany, where he developed the algorithmic research and art curation system ARCU as part of an artistic project on computational research in the field of artificial intelligence in contemporary art. ARCU&OHM graduated from Bauhaus University in 2018 with a jointly generated thesis titled »The Artist's Machine«. Since 2020, Tillmann Ohm continues to develop ARCU and other curatorial experiments as a PhD Research Fellow within the EU-funded Cultural Data Analytics research project (CUDAN) and the School of Digital Technologies at Tallinn University in Estonia.            </div>
         </div></div></div>
 
 
@@ -118,7 +118,9 @@
                     <b class="key">Network science</b>, a field that brings together various disciplines working with networks, is largely concerned with the analysis of complex relational data such as complex networks – usually networks of real systems <a  onclick="slider_methods.goTo(17)"> [8]</a>. Networks can be found in social relationships between people, in brain cells and neurons, or in the form of semantic networks of words and their similarities. Collections also entail network structures, for example between items and their shared properties. Various network analysis methods and graph algorithms are suitable for curatorial exploration of these structures. For example, <em>link analysis</em> to identify patterns of connections between nodes and evaluate complex relationships to retrieve structures from the collection data; 
                 </div>      
                 <div> 
-                    <em>community detection</em> for clustering nodes into groups and subsets to map semantically coherent topics that were not explicit in the data; or <em>shortest paths</em> to find possible routes through the collection network, similar to a navigation system in automobiles. For traversing, networks are particularly suitable as they already entail a "roadmap" that is easy to navigate, allowig associative "net-walks" through the data.
+                    <em>community detection</em> for clustering nodes into groups and subsets to map semantically coherent topics that were not explicit in the data; or <em>shortest paths</em> to find possible routes through the collection network, similar to a navigation system in automobiles. 
+                    <br><br> 
+                    For traversing, networks are particularly suitable as they already entail a "roadmap" that is easy to navigate, allowig associative "net-walks" through the data.
                 </div>    
                 <div>
                     <br><br><br><br><br><br>
@@ -408,39 +410,55 @@
     var winHeight = document.getElementById("graph-container").clientHeight + 91 + 60;
     var winWidth = document.getElementById("graph-container").clientWidth;
 
-    var support = CSS.supports("backdrop-filter: blur(2px)") | CSS.supports("-webkit-backdrop-filter: blur(2px)")
+    var support = CSS.supports("backdrop-filter: blur(2px)") | CSS.supports("-webkit-backdrop-filter: blur(2px)");
+    var scrollSmooth = CSS.supports("scroll-behavior: smooth");
 
     function clamp(value, min, max) {
         return Math.min(Math.max(value, min), max);
     }
 
-    var scrollWait = false;
-
+    // var scrollWait = false;
+    var oldScroll = 0;
     window.onscroll = function(e) {
-    console.log(this.scrollY)
-    if (scrollWait == false) {
-        if (this.oldScroll > this.scrollY){
+
+    this.scrollDiff = this.scrollY - oldScroll;
+
+    // console.log(scrollDiff)
+
+    // if (scrollWait == false) {
+        if (scrollDiff < 0){
             if (this.scrollY < 200) {
                 animateLogo(0);
             } else {
+                // scrollLogo(0,Math.abs(scrollDiff) * scrollSteps);
                 scrollLogo(0);
             }
         };
-        if (this.oldScroll < this.scrollY){
-            if (support == 0) {document.getElementById("graph-container").style.filter = "blur(2px)"};
-            if (this.scrollY > 500) {
+        if (scrollDiff > 0){
+
+            // animateLogo(1,Math.abs(scrollDiff) * scrollSteps);
+            // if (scrollDiff < 100) {scrollDiff = scrollDiff * 100};
+            if (scrollSmooth == 0 && this.scrollY > 500) {
                 animateLogo(1);
-            }
-            else {
+            } else {
                 scrollLogo(1);
-            }
+            };
+
+
+
+            if (support == 0) {document.getElementById("graph-container").style.filter = "blur(2px)"};
+            
+            // else {
+            //     // scrollLogo(1);
+            //     animateLogo(1);
+            // }
         }
-    };
-        this.oldScroll = this.scrollY;
+    // };
+    oldScroll = this.scrollY;
     };
     
-    function animateLogo(direction) {
-        scrollWait = true;
+    function animateLogo(direction, resolution) {
+        // scrollWait = true;
         sigma.plugins.animate(
             s,
             {
@@ -450,14 +468,16 @@
             color: "color" + direction
             },
             {
+                res: scrollSteps,
+                length: resolution,
                 onComplete: function() {
-                    scrollWait = false;
+                    // scrollWait = false;
                     if (support == 0) {document.getElementById("graph-container").style.filter = "blur(0px)"};
-                }
+                },
             }
     )};
 
-    function scrollLogo(direction){   
+    function scrollLogo(direction, resolution){   
         if (direction == 1) {
             var resolution = clamp(winWidth/10000, 0.04, 0.12);
         } else {
@@ -474,6 +494,7 @@
             },
             {
                 res: resolution,
+                // length: length,
                 factor: 0.1
             }
     )};
@@ -659,7 +680,7 @@ var slider_res = tns({
   });
 
 document.getElementsByClassName("sigma-svg")[0].style.height = String(document.getElementById("graph-container").clientHeight + 91 + 60) + "px";
-
+var scrollSteps = 10/(document.body.scrollHeight - document.body.offsetHeight);
 </script>
 
 </html>

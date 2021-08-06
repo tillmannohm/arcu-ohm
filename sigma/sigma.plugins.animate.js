@@ -144,54 +144,59 @@
 
     function step() {
       var p = (sigma.utils.dateNow() - start) / duration;
+                // console.log(p);
+      // var p = o.res;
+      // if (p <= o.length) { 
+        if (p >= 1) {
+          nodes.forEach(function(node) {
+            for (var k in animate)
+              if (k in animate)
+                node[k] = node[animate[k]];
+          });
 
-      if (p >= 1) {
-        nodes.forEach(function(node) {
-          for (var k in animate)
-            if (k in animate)
-              node[k] = node[animate[k]];
-        });
+          // Allow to refresh edgequadtree:
+          var k,
+              c;
+          for (k in s.cameras) {
+            c = s.cameras[k];
+            c.edgequadtree._enabled = true;
+          }
 
-        // Allow to refresh edgequadtree:
-        var k,
-            c;
-        for (k in s.cameras) {
-          c = s.cameras[k];
-          c.edgequadtree._enabled = true;
+          s.refresh();
+          if (typeof o.onComplete === 'function')
+            o.onComplete();
+        } else {
+          // for (let i = 0; i<o.length; i++) { 
+          // p = o.res;
+          p = easing(p);
+          // console.log(i);
+          nodes.forEach(function(node) {
+            for (var k in animate)
+              if (k in animate) {
+                if (k.match(/color$/))
+                  node[k] = interpolateColors(
+                    startPositions[node.id][k],
+                    node[animate[k]],
+                    p
+                  );
+                else
+                  node[k] =
+                    node[animate[k]] * p +
+                    startPositions[node.id][k] * (1 - p);
+              }
+          });
+          s.refresh();
+          s.animations[id] = requestAnimationFrame(step);
         }
-
-        s.refresh();
-        if (typeof o.onComplete === 'function')
-          o.onComplete();
-      } else {
-        p = easing(p);
-        nodes.forEach(function(node) {
-          for (var k in animate)
-            if (k in animate) {
-              if (k.match(/color$/))
-                node[k] = interpolateColors(
-                  startPositions[node.id][k],
-                  node[animate[k]],
-                  p
-                );
-              else
-                node[k] =
-                  node[animate[k]] * p +
-                  startPositions[node.id][k] * (1 - p);
-            }
-        });
-
-        s.refresh();
-        s.animations[id] = requestAnimationFrame(step);
-      }
+      // }
     }
 
-    step();
+    step();    
   };
 
 
 
-
+// SCROLL
 
 
   sigma.plugins.scroll = function(s, animate, options) {
@@ -236,6 +241,7 @@
 
     function step() {
       var p = o.res;
+      
       p = easing(p);
       nodes.forEach(function(node) {
         for (var k in animate)
@@ -258,11 +264,6 @@
 
     step();
   };
-
-
-
-
-
 
 
 
