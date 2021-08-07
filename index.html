@@ -50,19 +50,19 @@
     <div class="bar transparent">
       <a class="bar-item button padding-large hide-medium hide-large" href="javascript:void(0)" onclick="closeMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a class="bar-item button padding-large" onclick="window.scrollTo(0,0); animateLogo(0)">HOME</a>
-      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('ABOUT').scrollIntoView(true)">ABOUT</a>
-      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('METHODS').scrollIntoView(true)">CONCEPT & METHODS</a>
-      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('SHOWCASE').scrollIntoView(true)">SHOWCASE</a>
-      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('CONTACT').scrollIntoView(true)">CONTACT</a>
+      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('ABOUT').scrollIntoView({ block: 'start',  behavior: 'smooth' })">ABOUT</a>
+      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('METHODS').scrollIntoView({ block: 'start',  behavior: 'smooth' })">CONCEPT & METHODS</a>
+      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('SHOWCASE').scrollIntoView({ block: 'start',  behavior: 'smooth' })">SHOWCASE</a>
+      <a class="bar-item button padding-large hide-small" onclick="document.getElementById('CONTACT').scrollIntoView({ block: 'start',  behavior: 'smooth' })">CONTACT</a>
     </div>
   </div>
   
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="navDemo" class="bar-block hide hide-large hide-medium head transparent" style="margin-top:46px">
-    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('ABOUT').scrollIntoView(true)">ABOUT</a>
-    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('METHODS').scrollIntoView(true)">CONCEPT & METHODS</a>
-    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('SHOWCASE').scrollIntoView(true) ">SHOWCASE</a>
-    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('CONTACT').scrollIntoView(true)">CONTACT</a>
+    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('ABOUT').scrollIntoView({ block: 'start',  behavior: 'smooth' })">ABOUT</a>
+    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('METHODS').scrollIntoView({ block: 'start',  behavior: 'smooth' })">CONCEPT & METHODS</a>
+    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('SHOWCASE').scrollIntoView({ block: 'start',  behavior: 'smooth' }) ">SHOWCASE</a>
+    <a class="bar-item button padding-large" onclick="closeMenu(); document.getElementById('CONTACT').scrollIntoView({ block: 'start',  behavior: 'smooth' })">CONTACT</a>
   </div>
   
 <!-- Page content -->
@@ -75,12 +75,12 @@
             <div>
                 ARCU&OHM is a human-machine collaboration exploring algorithmic curation since 2016. The expert system and »Artificial Curator« ARCU refers to a series of computational projects dealing with the research, selection and contextualization of artefacts such as artworks, objects and literature. 
                 <br><br>
-                ARCU is continuously developed by artist and researcher <a onclick="slider_about.goTo(1);">Tillmann Ohm</a> as an autonomous <a onclick="closeMenu(); document.getElementById('research').scrollIntoView(true)">research system</a> and algorithmic collaborator for machine-aided <a onclick="closeMenu(); document.getElementById('exhibitions').scrollIntoView(true)">exhibition-making</a>, <a onclick="closeMenu(); document.getElementById('research').scrollIntoView(true)">publishing</a> and prototyping <a onclick="closeMenu(); document.getElementById('tools').scrollIntoView(true)">curatorial tools</a> for digital collections.
+                ARCU is continuously developed by artist and researcher <a onclick="slider_about.goTo(1);">Tillmann Ohm</a> as an autonomous <a onclick="closeMenu(); document.getElementById('research').scrollIntoView({ block: 'start',  behavior: 'smooth' })">research system</a> and algorithmic collaborator for machine-aided <a onclick="closeMenu(); document.getElementById('exhibitions').scrollIntoView({ block: 'start',  behavior: 'smooth' })">exhibition-making</a>, <a onclick="closeMenu(); document.getElementById('research').scrollIntoView({ block: 'start',  behavior: 'smooth' })">publishing</a> and prototyping <a onclick="closeMenu(); document.getElementById('tools').scrollIntoView({ block: 'start',  behavior: 'smooth' })">curatorial tools</a> for digital collections.
             </div>
             <div>
                 ARCU&OHM is a human-machine collaboration exploring algorithmic curation since 2016. The expert system and »Artificial Curator« ARCU refers to a series of computational projects dealing with the research, selection and contextualization of artefacts such as artworks, objects and literature. 
                 <br><br>
-                ARCU is continuously developed by artist and researcher Tillmann Ohm as an autonomous <a onclick="closeMenu(); document.getElementById('research').scrollIntoView(true)">research system</a> and algorithmic collaborator for machine-aided <a onclick="closeMenu(); document.getElementById('exhibitions').scrollIntoView(true)">exhibition-making</a>, <a onclick="closeMenu(); document.getElementById('research').scrollIntoView(true)">publishing</a> and prototyping <a onclick="closeMenu(); document.getElementById('tools').scrollIntoView(true)">curatorial tools</a> for digital collections.
+                ARCU is continuously developed by artist and researcher Tillmann Ohm as an autonomous <a onclick="closeMenu(); document.getElementById('research').scrollIntoView({ block: 'start',  behavior: 'smooth' })">research system</a> and algorithmic collaborator for machine-aided <a onclick="closeMenu(); document.getElementById('exhibitions').scrollIntoView({ block: 'start',  behavior: 'smooth' })">exhibition-making</a>, <a onclick="closeMenu(); document.getElementById('research').scrollIntoView({ block: 'start',  behavior: 'smooth' })">publishing</a> and prototyping <a onclick="closeMenu(); document.getElementById('tools').scrollIntoView({ block: 'start',  behavior: 'smooth' })">curatorial tools</a> for digital collections.
                 <br><br>
                 Tillmann Ohm is an artist and creative computational developer with a special focus on technology-driven artistic research and algorithmic art curation. He combines network science, machine learning and digital archives with exhibition-making to develop experimental tools for curating art and engaging with cultural artefacts.
                 <br><br>
@@ -282,7 +282,7 @@
                         <img src="img/applications-02.jpg" alt="exhibition view: kunst(re_public)" style="width: 100%;">
                     </div>
                     <div>
-                        <div style="height:230px;;position:relative;"><iframe src="https://player.vimeo.com/video/286404759?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>           
+                        <div style="height:230px;;position:relative;"><iframe src="https://player.vimeo.com/video/286404759?autoplay=0&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>           
                     </div>
                     <div>
 
@@ -316,7 +316,7 @@
                             <a href="mailto:mail@tillmannohm.com" target="blank" class="key">purchase book</a>
                         </div>
                         <div>
-                            <div style="height:230px;position:relative;"><iframe src="https://player.vimeo.com/video/282210599?autoplay=1&title=0&byline=0&portrait=0&maxheight=200" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>                        
+                            <div style="height:230px;position:relative;"><iframe src="https://player.vimeo.com/video/282210599?autoplay=0&title=0&byline=0&portrait=0&maxheight=200" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>                        
                         </div>
                         <div>
                             <a href="https://twitter.com/A_R_C_U" target="blank"><h6>ARCU on Twitter</h6></a>
