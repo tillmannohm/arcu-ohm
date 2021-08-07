@@ -411,7 +411,7 @@
     var winWidth = document.getElementById("graph-container").clientWidth;
 
     var support = CSS.supports("backdrop-filter: blur(2px)") | CSS.supports("-webkit-backdrop-filter: blur(2px)");
-    var scrollSmooth = CSS.supports("scroll-behavior: smooth");
+    // var scrollSmooth = CSS.supports("scroll-behavior: smooth");
 
     function clamp(value, min, max) {
         return Math.min(Math.max(value, min), max);
@@ -438,13 +438,12 @@
 
             // animateLogo(1,Math.abs(scrollDiff) * scrollSteps);
             // if (scrollDiff < 100) {scrollDiff = scrollDiff * 100};
-            if (scrollSmooth == 0 && this.scrollY > 500) {
-                animateLogo(1);
-            } else {
-                scrollLogo(1);
-            };
-
-
+            // if (scrollSmooth == 0 && this.scrollY > 500) {
+            //     animateLogo(1);
+            // } else {
+            //     scrollLogo(1);
+            // };
+            scrollLogo(1);
 
             if (support == 0) {document.getElementById("graph-container").style.filter = "blur(2px)"};
             
