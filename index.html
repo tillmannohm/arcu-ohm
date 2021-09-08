@@ -448,10 +448,12 @@ s = new sigma({
         mouseEnabled: false,
         touchEnabled: false,
         autoRescale: false,
+        webglOversamplingRatio: 1
+        
     },
         renderer: {
         container: document.getElementById('graph-container'),
-        type: 'svg'
+        type: 'webgl'
         },
     });
 
