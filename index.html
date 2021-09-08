@@ -64,8 +64,8 @@
 
 <script type="text/javascript" src="data.js"></script> 
 
-<!-- <link rel="stylesheet" href="main-min.css"> -->
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="main-min.css">
+<!-- <link rel="stylesheet" href="main.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
@@ -486,7 +486,7 @@ window.onscroll = function(e) {
                     animateLogo(0);
                 } else {
                     // scrollLogo(0,Math.abs(scrollDiff) * scrollSteps);
-                    scrollLogo(0);
+                    scrollLogo(0, this.scrollY);
                 }
             };
             if (scrollDiff > 0){
@@ -495,28 +495,31 @@ window.onscroll = function(e) {
                 // if (scrollDiff < 100) {scrollDiff = scrollDiff * 100};
                 if (scrollSmooth == 0 && this.scrollY > 600) {
                     animateLogo(1);
-                    // scrollLogo(1);
+                    // scrollLogo(1, this.scrollY);
                 } else {
-                    scrollLogo(1);
+                    if (this.scrollY < 200) {
+                        scrollLogo(1, this.scrollY);
+                    } else {
+                        scrollLogo(1, this.scrollY);
+                    }
                 };
-                // scrollLogo(1);
+                // scrollLogo(1, this.scrollY);
 
                 if (support == 0) {document.getElementById("graph-container").style.filter = "blur(0.7px)"};
                 
                 // else {
-                //     // scrollLogo(1);
+                //     // scrollLogo(1, this.scrollY);
                 //     animateLogo(1);
                 // }
             }
         };
     oldScroll = this.scrollY;
 }
-
 };
 
 
 function animateLogo(direction) {
-        scrollWait = true;
+        if (direction == 1) { scrollWait = true };
         // console.log(scrollSteps)
         sigma.plugins.animate(
             s,
@@ -536,7 +539,8 @@ function animateLogo(direction) {
             }
     )};
 
-    function scrollLogo(direction){   
+    function scrollLogo(direction, resFactor){   
+        var resolution = Math.max(resFactor/winHeight, 0.03);
         // if (direction == 1) {
         //     var resolution = clamp(winWidth/10000, 0.04, 0.06);
         // } else {
@@ -553,7 +557,7 @@ function animateLogo(direction) {
             color: "color1"
             },
             {
-                res: 0.06,
+                res: resolution,
                 // length: length,
                 factor: 0.1
             })
