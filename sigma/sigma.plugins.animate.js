@@ -241,7 +241,6 @@
 
     function step() {
       var p = o.res;
-      
       p = easing(p);
       nodes.forEach(function(node) {
         for (var k in animate)
