@@ -8,7 +8,7 @@ html, body {
     font-size: 14px;
     line-height: 1.5;
     height: 100%;
-    /* scroll-behavior: smooth;  */
+    scroll-behavior: smooth; 
 }
 html{overflow-x:hidden}
 
@@ -743,3 +743,27 @@ img.center {
     justify-content: left;
     
   }
+
+#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+.load-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
