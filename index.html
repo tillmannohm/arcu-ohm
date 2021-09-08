@@ -439,21 +439,20 @@ s = new sigma({
 //   container: 'graph-container',
   settings: {
     animationsTime: 2000,
+    // defaultEdgeType: 'curve',
     edgeColor: 'default',
-        defaultEdgeColor: '#F9D676',
-        // defaultNodeColor: '#52758E',
-        mouseWheelEnabled: false,
-        nodesPowRatio: 1,
-        edgesPowRatio: 1,
-        mouseEnabled: false,
-        touchEnabled: false,
-        autoRescale: false,
-        webglOversamplingRatio: 1
-        
+    defaultEdgeColor: '#F9D676',
+    // defaultNodeColor: '#52758E',
+    mouseWheelEnabled: false,
+    nodesPowRatio: 1,
+    edgesPowRatio: 1,
+    mouseEnabled: false,
+    touchEnabled: false,
+    autoRescale: false
     },
         renderer: {
-        container: document.getElementById('graph-container'),
-        type: 'webgl'
+            container: document.getElementById('graph-container'),
+            type: 'canvas'
         },
     });
 
@@ -511,7 +510,9 @@ window.onscroll = function(e) {
             }
         };
     oldScroll = this.scrollY;
-}};
+}
+
+};
 
 
 function animateLogo(direction) {
