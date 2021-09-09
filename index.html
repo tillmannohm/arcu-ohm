@@ -64,8 +64,8 @@
 
 <script type="text/javascript" src="data.js"></script> 
 
-<link rel="stylesheet" href="main-min.css">
-<!-- <link rel="stylesheet" href="main.css"> -->
+<!-- <link rel="stylesheet" href="main-min.css"> -->
+<link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
@@ -432,11 +432,11 @@
 
 
 
-<script async>
+<script>
 // logo interactions
 s = new sigma({
   graph: data,
-//   container: 'graph-container',
+  container: 'graph-container',
   settings: {
     animationsTime: 2000,
     // defaultEdgeType: 'curve',
@@ -449,11 +449,12 @@ s = new sigma({
     mouseEnabled: false,
     touchEnabled: false,
     autoRescale: false
-    },
-        renderer: {
-            container: document.getElementById('graph-container'),
-            type: 'canvas'
-        },
+    }
+    // ,
+    //     renderer: {
+    //         container: document.getElementById('graph-container'),
+    //         type: 'canvas'
+    //     },
     });
 
 var winHeight = document.getElementById("graph-container").clientHeight + 91 + 60;
@@ -571,6 +572,7 @@ function resize(){
     // s.cameras[0].goTo({ x: cam_x, y: cam_y, angle: 0, ratio: ratio });
     s.cameras[0].goTo({ x: 148.6, y: cam_y, angle: 0, ratio: 1 });
     // document.getElementById("main-content").style.paddingTop = String((1000/ratio)+64)+"px";
+    console.log("resized")
 };
 
 s.graph.nodes().forEach(function(node) {
@@ -749,6 +751,11 @@ var slider_res = tns({
     loop:false,
     items:1
   });
+
+
+// bind function to event
+slider_about.events.on('indexChanged', resize);
+
 
 // document.getElementsByClassName("sigma-svg")[0].style.height = String(document.getElementById("graph-container").clientHeight + 134) + "px";
 var scrollSteps = 1/(document.body.scrollHeight - document.body.offsetHeight);
