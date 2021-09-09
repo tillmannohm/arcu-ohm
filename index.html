@@ -1,7 +1,17 @@
-<!DOCTYPE html><html lang=en><head><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest>
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTDEMGSL7N"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-DTDEMGSL7N');</script></head><title>ARCU&OHM</title><meta charset=UTF-16><meta name=viewport content="width=device-width, initial-scale=1">
+gtag('js',new Date());gtag('config','G-DTDEMGSL7N');</script>
+</head>
+<title>ARCU&OHM</title>
+<meta charset=UTF-16>
+<meta name=viewport content="width=device-width, initial-scale=1">
 <script src=src/sigma.core.js></script>
 <script src=src/conrad.js></script>
 <script src=src/utils/sigma.utils.js></script>
@@ -49,49 +59,113 @@ gtag('js',new Date());gtag('config','G-DTDEMGSL7N');</script></head><title>ARCU&
 <script src=src/misc/sigma.misc.bindDOMEvents.js></script>
 <script src=src/misc/sigma.misc.drawHovers.js></script>
 <script src=sigma/sigma.plugins.animate.js></script>
-<script type=text/javascript src=data.js></script><link rel=stylesheet href=main.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css>
+<script type=text/javascript src=data.js></script>
+<link rel=stylesheet href=main.css>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css>
 <!--[if (lt IE 9)]><script src=https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js></script><![endif]-->
-<script src=https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js></script><body><div id=loader class=load-center></div><div style=position:relative><div id=graph-container></div><div class=head><div class="bar transparent">
+<script src=https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js></script>
+<body>
+<div id=loader class=load-center></div>
+<div style=position:relative>
+<div id=graph-container></div>
+<div class=head>
+<div class="bar transparent">
 <a class="bar-item button padding-large hide-medium hide-large" href=javascript:void(0) onclick=closeMenu() title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 <a class="bar-item button padding-large" onclick=window.scrollTo(0,0);animateLogo(0)>HOME</a>
 <a class="bar-item button padding-large hide-small" onclick="document.getElementById('ABOUT').scrollIntoView(true)">ABOUT</a>
 <a class="bar-item button padding-large hide-small" onclick="document.getElementById('METHODS').scrollIntoView(true)">CONCEPT & METHODS</a>
 <a class="bar-item button padding-large hide-small" onclick="document.getElementById('SHOWCASE').scrollIntoView(true)">SHOWCASE</a>
-<a class="bar-item button padding-large hide-small" onclick="document.getElementById('CONTACT').scrollIntoView(true)">CONTACT</a></div></div><div id=navDemo class="bar-block hide hide-large hide-medium head transparent" style=margin-top:46px>
+<a class="bar-item button padding-large hide-small" onclick="document.getElementById('CONTACT').scrollIntoView(true)">CONTACT</a>
+</div>
+</div>
+<div id=navDemo class="bar-block hide hide-large hide-medium head transparent" style=margin-top:46px>
 <a class="bar-item button padding-large" onclick="closeMenu();document.getElementById('ABOUT').scrollIntoView(true)">ABOUT</a>
 <a class="bar-item button padding-large" onclick="closeMenu();document.getElementById('METHODS').scrollIntoView(true)">CONCEPT & METHODS</a>
 <a class="bar-item button padding-large" onclick="closeMenu();document.getElementById('SHOWCASE').scrollIntoView(true)">SHOWCASE</a>
-<a class="bar-item button padding-large" onclick="closeMenu();document.getElementById('CONTACT').scrollIntoView(true)">CONTACT</a></div><div class=content id=main-content><div class=padding-64 style=max-width:860px id=ABOUT><div class="transparent round box"><h2 class="wide center padding-16">ABOUT</h2><div class=slider-about><div>
+<a class="bar-item button padding-large" onclick="closeMenu();document.getElementById('CONTACT').scrollIntoView(true)">CONTACT</a>
+</div>
+<div class=content id=main-content>
+<div class=padding-64 style=max-width:860px id=ABOUT>
+<div class="transparent round box">
+<h2 class="wide center padding-16">ABOUT</h2>
+<div class=slider-about>
+<div>
 ARCU&OHM is a human-machine collaboration exploring algorithmic curation since 2016. The expert system and »Artificial Curator« ARCU refers to a series of computational projects dealing with the research, selection and contextualization of artefacts such as artworks, objects and literature.
 <br><br>
-ARCU is continuously developed by artist and researcher <a onclick=slider_about.goTo(1)>Tillmann Ohm</a> as an autonomous <a onclick="closeMenu();document.getElementById('research').scrollIntoView(true)">research system</a> and algorithmic collaborator for machine-aided <a onclick="closeMenu();document.getElementById('exhibitions').scrollIntoView(true)">exhibition-making</a>, <a onclick="closeMenu();document.getElementById('research').scrollIntoView(true)">publishing</a> and prototyping <a onclick="closeMenu();document.getElementById('tools').scrollIntoView(true)">curatorial tools</a> for digital collections.</div><div>
+ARCU is continuously developed by artist and researcher <a onclick=slider_about.goTo(1)>Tillmann Ohm</a> as an autonomous <a onclick="closeMenu();document.getElementById('research').scrollIntoView(true)">research system</a> and algorithmic collaborator for machine-aided <a onclick="closeMenu();document.getElementById('exhibitions').scrollIntoView(true)">exhibition-making</a>, <a onclick="closeMenu();document.getElementById('research').scrollIntoView(true)">publishing</a> and prototyping <a onclick="closeMenu();document.getElementById('tools').scrollIntoView(true)">curatorial tools</a> for digital collections.
+</div>
+<div>
 ARCU&OHM is a human-machine collaboration exploring algorithmic curation since 2016. The expert system and »Artificial Curator« ARCU refers to a series of computational projects dealing with the research, selection and contextualization of artefacts such as artworks, objects and literature.
 <br><br>
 ARCU is continuously developed by artist and researcher Tillmann Ohm as an autonomous <a onclick="closeMenu();document.getElementById('research').scrollIntoView(true)">research system</a> and algorithmic collaborator for machine-aided <a onclick="closeMenu();document.getElementById('exhibitions').scrollIntoView(true)">exhibition-making</a>, <a onclick="closeMenu();document.getElementById('research').scrollIntoView(true)">publishing</a> and prototyping <a onclick="closeMenu();document.getElementById('tools').scrollIntoView(true)">curatorial tools</a> for digital collections.
 <br><br>
 Tillmann Ohm is an artist and creative computational developer with a special focus on technology-driven artistic research and algorithmic art curation. He combines network science, machine learning and digital archives with exhibition-making to develop experimental tools for curating art and engaging with cultural artefacts.
 <br><br>
-Ohm studied fine arts at the historic Bauhaus University Weimar in Germany, where he developed the algorithmic research and art curation system ARCU as part of an artistic project on computational research in the field of artificial intelligence in contemporary art. ARCU&OHM graduated from Bauhaus University in 2018 with a jointly generated thesis titled »The Artist's Machine«. Since 2020, Tillmann Ohm continues to develop ARCU and other curatorial experiments as a PhD Research Fellow within the EU-funded Cultural Data Analytics research project (CUDAN) and the School of Digital Technologies at Tallinn University in Estonia.</div></div></div></div><div class=padding-64 style=max-width:860px id=METHODS><div class="transparent round box"><h2 class="wide padding-16">CONCEPT & METHODS</h2><div><div class=slider-methods><div>
-ARCU&OHM's primary focus lies in the research and development of frameworks for curating digital collections using computational methods. The underlying assumption is that semantic relationships of artifacts, for example in collections of artworks, can be contextualized and embedded into a curatorial possibility space, where patterns and complex structures emerge from the data. In these <em>semantic networks</em> and multidimensional <em>vector spaces</em>, various curatorial strategies for exploration and selection processes can be algorithmically modelled by using <em>network science</em> and <em>graph theory</em> as well as machine learning techniques for <em>feature extraction</em>.</div><div>
+Ohm studied fine arts at the historic Bauhaus University Weimar in Germany, where he developed the algorithmic research and art curation system ARCU as part of an artistic project on computational research in the field of artificial intelligence in contemporary art. ARCU&OHM graduated from Bauhaus University in 2018 with a jointly generated thesis titled »The Artist's Machine«. Since 2020, Tillmann Ohm continues to develop ARCU and other curatorial experiments as a PhD Research Fellow within the EU-funded Cultural Data Analytics research project (CUDAN) and the School of Digital Technologies at Tallinn University in Estonia. </div>
+</div></div></div>
+<div class=padding-64 style=max-width:860px id=METHODS>
+<div class="transparent round box">
+<h2 class="wide padding-16">CONCEPT & METHODS</h2>
+<div>
+<div class=slider-methods>
+<div>
+ARCU&OHM's primary focus lies in the research and development of frameworks for curating digital collections using computational methods. The underlying assumption is that semantic relationships of artifacts, for example in collections of artworks, can be contextualized and embedded into a curatorial possibility space, where patterns and complex structures emerge from the data. In these <em>semantic networks</em> and multidimensional <em>vector spaces</em>, various curatorial strategies for exploration and selection processes can be algorithmically modelled by using <em>network science</em> and <em>graph theory</em> as well as machine learning techniques for <em>feature extraction</em>.
+</div>
+<div>
 In a combination of visual features, for example retrieved from images with <em>computer vision</em>, and semantic interpretations based on metadata such as taxonomies and descriptive annotations, we can construct, analyze, and navigate the
-<br><br><h3 class=wide>Curatorial Possibility Spaces of Digital Collections</h3></div><div>
-After the art curatorial practice shifted from objects to processes and later towards "dynamic network systems" <a onclick=slider_methods.goTo(16)> [1]</a>, many art curators nowadays see themselves as catalyzing nodes within complex network structures, performing "networked-co-curation" <a onclick=slider_methods.goTo(16)> [2]</a>. Their professional activities are ways of "thinking in terms of interconnections: linking objects, images, processes, people, locations, histories, and discourses" <a onclick=slider_methods.goTo(16)> [3]</a>. While Maria Lind locates these actions in the physical realm, we can easily extend them to a "new space of performativity" <a onclick=slider_methods.goTo(16)> [4]</a>, where we could navigate through the <em>latent spaces</em> of digital collections.</div><div>
-At the heart of every archive, museum, library or database lies a collection of gathered objects – spaces of "indeﬁnitely accumulating time" <a onclick=slider_methods.goTo(16)> [5]</a>. When we consider collections as "spaces of difference and representation" <a onclick=slider_methods.goTo(16)> [6]</a>, in this Foucaultian sense, where difference means the interpretation of relationships between objects and words (sometimes implicit and hidden), we can embed digital collections in such spaces of contextual meaning. In computer science, these computational spaces of objects and relations, of representation, meaning and hidden interpretations exist in <em>knowledge graphs</em> or networks in general. They are called <em>vector space</em>, <em>embedding space</em>, <em>latent space</em> and <em>hidden layers</em> in machine learning.</div><div>
-<br><br><br><br><br><br><h3 class=wide>Computational Methods</h3></div><div>
-<b class=key>Feature vectors</b>, properties encoded into numeric arrays, and <em>embeddings</em>, lower-dimensional mappings of higher-dimensional vectors, are very useful for navigation, analysis, and curation of digital collections. For example, grouping objects according to the features they contain, following Wittgenstein’s family resemblance<a onclick=slider_methods.goTo(17)> [7]</a>, allows to draw maps that put a digital collection in new contexts that might lead to new classifications. We can also travel through the embedding space by jumping from item to item based on their similarities and related distances. The possibility of transforming vectors and "mixing" them by performing arithmetic operations like subtracting and adding specific features, enables new types of search queries beyond keyword matching.</div><div>
-<b class=key>Network science</b>, a field that brings together various disciplines working with networks, is largely concerned with the analysis of complex relational data such as complex networks – usually networks of real systems <a onclick=slider_methods.goTo(17)> [8]</a>. Networks can be found in social relationships between people, in brain cells and neurons, or in the form of semantic networks of words and their similarities. Collections also entail network structures, for example between items and their shared properties. Various network analysis methods and graph algorithms are suitable for curatorial exploration of these structures. For example, <em>link analysis</em> to identify patterns of connections between nodes and evaluate complex relationships to retrieve structures from the collection data;</div><div>
+<br><br><h3 class=wide>Curatorial Possibility Spaces of Digital Collections</h3>
+</div>
+<div>
+After the art curatorial practice shifted from objects to processes and later towards "dynamic network systems" <a onclick=slider_methods.goTo(16)> [1]</a>, many art curators nowadays see themselves as catalyzing nodes within complex network structures, performing "networked-co-curation" <a onclick=slider_methods.goTo(16)> [2]</a>. Their professional activities are ways of "thinking in terms of interconnections: linking objects, images, processes, people, locations, histories, and discourses" <a onclick=slider_methods.goTo(16)> [3]</a>. While Maria Lind locates these actions in the physical realm, we can easily extend them to a "new space of performativity" <a onclick=slider_methods.goTo(16)> [4]</a>, where we could navigate through the <em>latent spaces</em> of digital collections.
+</div>
+<div>
+At the heart of every archive, museum, library or database lies a collection of gathered objects – spaces of "indeﬁnitely accumulating time" <a onclick=slider_methods.goTo(16)> [5]</a>. When we consider collections as "spaces of difference and representation" <a onclick=slider_methods.goTo(16)> [6]</a>, in this Foucaultian sense, where difference means the interpretation of relationships between objects and words (sometimes implicit and hidden), we can embed digital collections in such spaces of contextual meaning. In computer science, these computational spaces of objects and relations, of representation, meaning and hidden interpretations exist in <em>knowledge graphs</em> or networks in general. They are called <em>vector space</em>, <em>embedding space</em>, <em>latent space</em> and <em>hidden layers</em> in machine learning.
+</div>
+<div>
+<br><br><br><br><br><br>
+<h3 class=wide>Computational Methods</h3>
+</div>
+<div>
+<b class=key>Feature vectors</b>, properties encoded into numeric arrays, and <em>embeddings</em>, lower-dimensional mappings of higher-dimensional vectors, are very useful for navigation, analysis, and curation of digital collections. For example, grouping objects according to the features they contain, following Wittgenstein’s family resemblance<a onclick=slider_methods.goTo(17)> [7]</a>, allows to draw maps that put a digital collection in new contexts that might lead to new classifications. We can also travel through the embedding space by jumping from item to item based on their similarities and related distances. The possibility of transforming vectors and "mixing" them by performing arithmetic operations like subtracting and adding specific features, enables new types of search queries beyond keyword matching.
+</div>
+<div>
+<b class=key>Network science</b>, a field that brings together various disciplines working with networks, is largely concerned with the analysis of complex relational data such as complex networks – usually networks of real systems <a onclick=slider_methods.goTo(17)> [8]</a>. Networks can be found in social relationships between people, in brain cells and neurons, or in the form of semantic networks of words and their similarities. Collections also entail network structures, for example between items and their shared properties. Various network analysis methods and graph algorithms are suitable for curatorial exploration of these structures. For example, <em>link analysis</em> to identify patterns of connections between nodes and evaluate complex relationships to retrieve structures from the collection data;
+</div>
+<div>
 <em>community detection</em> for clustering nodes into groups and subsets to map semantically coherent topics that were not explicit in the data; or <em>shortest paths</em> to find possible routes through the collection network, similar to a navigation system in automobiles.
 <br><br>
-For traversing, networks are particularly suitable as they already entail a "roadmap" that is easy to navigate, allowing associative "net-walks" through the data.</div><div>
-<br><br><br><br><br><br><h3 class=wide>Graph Algorithms for Curatorial »Net-Walks«</h3></div><div>
+For traversing, networks are particularly suitable as they already entail a "roadmap" that is easy to navigate, allowing associative "net-walks" through the data.
+</div>
+<div>
 <br><br><br><br><br><br>
-ARCU&OHM implement many established analysis methods and algorithms for curatorial applications and develop new algorithmic and hybrid approaches inspired by concepts from philosophy, art and science.</div><div>
-<img src=img/warburg.svg alt="graph algorithm example: warburg" class=algo-graph></div><div>
-Trying to map the afterlife of Western antiquity with almost one thousand images on dozens of panels – the <em>»Mnemosyne Atlas«</em> <a onclick=slider_methods.goTo(17)> [11]</a> was Aby Warburg’s unfinished attempt to catch and retrace the cultural dynamics of iconographic pathos. Each panel presents a different visual argument of emerging and reappearing symbolic imagery and its meanings through groups of reproduced artworks arranged and rearranged over time. Warburg’s strategy inspired the development of a graph algorithm that extracts clusters of coherent features and semantic connections from objects in collection networks.</div><div>
-<img src=img/malraux.svg alt="graph algorithm example: malraux" class=algo-graph></div><div>
-Detaching artworks from their physical environment to place them in an aesthetic discourse with each other through photographic reproductions – <em>»Le Musée Imaginaire«</em> <a onclick=slider_methods.goTo(17)>[9][10] </a> is André Maulraux's version of an <em>imaginary museum</em> in book form. Its strategy is simple: confront two monumental artworks, regardless of time and space, on opposite pages – similar to double image slide projections once used in art history. In an exhibition setting, juxtapositions often form a symbiosis or create friction between two works. ARCU&OHM translates Malraux's approach into a graph algorithm that finds interesting pairs of objects within a collection, based on a combination of similar and contrary characteristics.</div><div>
-<img src=img/debord.svg alt="graph algorithm example: debord" class=algo-graph></div><div>
-In his essay <em>»Theory of the Dérive«</em><a onclick=slider_methods.goTo(17)> [12]</a> Guy Debord outlines the radical strategy of drifting deliberately without intention through urban landscapes and escaping the "spectacle" of modern cities by following the attractions of the encounters along the way. The <em>Dérive</em>, "drifting," and the <em>"Psychogeography"</em> <a onclick=slider_methods.goTo(17)>[13]</a> eventually became central concepts of the avant-garde movement and organization <em>Situationist International</em>. In collection networks, algorithmic queries are also attracted by dense topographic structures with many connections, ending up with predictable results. In a "directed intuition"<a onclick=slider_methods.goTo(17)> [14]</a> that avoids obvious attractors, ARCU&OHM's graph algorithm discovers the possibility space to find unexpected and often overlooked artifacts.</div><div><h5 class=wide>References</h5><div class=references>
+<h3 class=wide>Graph Algorithms for Curatorial »Net-Walks«</h3>
+</div>
+<div>
+<br><br><br><br><br><br>
+ARCU&OHM implement many established analysis methods and algorithms for curatorial applications and develop new algorithmic and hybrid approaches inspired by concepts from philosophy, art and science.
+</div>
+<div>
+<img src=img/warburg.svg alt="graph algorithm example: warburg" class=algo-graph>
+</div>
+<div>
+Trying to map the afterlife of Western antiquity with almost one thousand images on dozens of panels – the <em>»Mnemosyne Atlas«</em> <a onclick=slider_methods.goTo(17)> [11]</a> was Aby Warburg’s unfinished attempt to catch and retrace the cultural dynamics of iconographic pathos. Each panel presents a different visual argument of emerging and reappearing symbolic imagery and its meanings through groups of reproduced artworks arranged and rearranged over time. Warburg’s strategy inspired the development of a graph algorithm that extracts clusters of coherent features and semantic connections from objects in collection networks.
+</div>
+<div>
+<img src=img/malraux.svg alt="graph algorithm example: malraux" class=algo-graph>
+</div>
+<div>
+Detaching artworks from their physical environment to place them in an aesthetic discourse with each other through photographic reproductions – <em>»Le Musée Imaginaire«</em> <a onclick=slider_methods.goTo(17)>[9][10] </a> is André Maulraux's version of an <em>imaginary museum</em> in book form. Its strategy is simple: confront two monumental artworks, regardless of time and space, on opposite pages – similar to double image slide projections once used in art history. In an exhibition setting, juxtapositions often form a symbiosis or create friction between two works. ARCU&OHM translates Malraux's approach into a graph algorithm that finds interesting pairs of objects within a collection, based on a combination of similar and contrary characteristics.
+</div>
+<div>
+<img src=img/debord.svg alt="graph algorithm example: debord" class=algo-graph>
+</div>
+<div>
+In his essay <em>»Theory of the Dérive«</em><a onclick=slider_methods.goTo(17)> [12]</a> Guy Debord outlines the radical strategy of drifting deliberately without intention through urban landscapes and escaping the "spectacle" of modern cities by following the attractions of the encounters along the way. The <em>Dérive</em>, "drifting," and the <em>"Psychogeography"</em> <a onclick=slider_methods.goTo(17)>[13]</a> eventually became central concepts of the avant-garde movement and organization <em>Situationist International</em>. In collection networks, algorithmic queries are also attracted by dense topographic structures with many connections, ending up with predictable results. In a "directed intuition"<a onclick=slider_methods.goTo(17)> [14]</a> that avoids obvious attractors, ARCU&OHM's graph algorithm discovers the possibility space to find unexpected and often overlooked artifacts.
+</div>
+<div>
+<h5 class=wide>References</h5>
+<div class=references>
 [1] J. e. Krysa, Curating Immateriality: The Work of the Curator in the Age of Network Systems, Reino Unido: Autonomedia, 2006.
 <br>
 [2] B. Graham and S. Cook, Rethinking Curating: Art After New Media, MIT Press, 2010.
@@ -102,7 +176,11 @@ In his essay <em>»Theory of the Dérive«</em><a onclick=slider_methods.goTo(17
 <br>
 [5] M. Foucault, Of Other Spaces. Tran. Jay Miskowiec, Diacritics, vol. 16, no. 1, pp. 22-27, 1986 [1967]. <a href=https://web.mit.edu/allanmc/www/foucault1.pdf target=blank>https://web.mit.edu/allanmc/www/foucault1.pdf</a>
 <br>
-[6] B. Lord, Foucault’s Museum: Difference, Representation, and Genealogy, Museum and Society, vol. 4, no. 1, pp. 1-14, 2006. <a href=https://www108.lamp.le.ac.uk/ojs1/index.php/mas/article/download/74/89 target=blank>https://www108.lamp.le.ac.uk/ojs1/index.php/mas/article/download/74/89</a></div></div><div><div class=references>
+[6] B. Lord, Foucault’s Museum: Difference, Representation, and Genealogy, Museum and Society, vol. 4, no. 1, pp. 1-14, 2006. <a href=https://www108.lamp.le.ac.uk/ojs1/index.php/mas/article/download/74/89 target=blank>https://www108.lamp.le.ac.uk/ojs1/index.php/mas/article/download/74/89</a>
+</div>
+</div>
+<div>
+<div class=references>
 [7] L. Wittgenstein, Philosophical Investigations, Basil Blackwell, 1968 [1953].
 <br>
 [8] A.-L. Barabási, Network Science, Cambridge University Press, 2016. <a href=http://networksciencebook.com target=blank>http://networksciencebook.com</a>
@@ -117,28 +195,66 @@ In his essay <em>»Theory of the Dérive«</em><a onclick=slider_methods.goTo(17
 <br>
 [13] G. Debord, Psychogeographic Guide of Paris, Permild and Rosengreen, 1957.
 <br>
-[14] F. Zwicky and M. A. Zwicky, Catalogue of Selected Compact Galaxies and of Post-Eruptive Galaxie, Zwicky, 1971. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1090.4584&rep=rep1&type=pdf" target=blank>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1090.4584&rep=rep1&type=pdf</a></div></div></div></div></div></div><div class=padding-64 style=max-width:860px id=SHOWCASE><div class="transparent round box"><h2 class="wide padding-16">SHOWCASE</h2>
-ARCU&OHM carry out a variety of activities, including consultancy for cultural institutions and companies, development of curatorial software tools and prototypes, machine-aided exhibition-making and PhD research.<div id=exhibitions class=padding-64><h3 class="wide padding-16">Exhibition Making</h3><div class=slider-exh><div>
-One of the main goals of museums and many other cultural institutions is to communicate the curatorial and scientific research to an audience. The development and practical implementation of experimental new methods for machine-assisted exhibition programming are therefore one of the most important activities of ARCU&OHM. Together with exhibition venues and institutions, curatorial concepts and final exhibitions are produced, based on computational methods such as machine learning and network science.</div><div>
-<img src=img/exhibition-01.jpg alt="exhibition view: kunst(re_public)" style=width:100%></div><div><h6>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</h6>
+[14] F. Zwicky and M. A. Zwicky, Catalogue of Selected Compact Galaxies and of Post-Eruptive Galaxie, Zwicky, 1971. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1090.4584&rep=rep1&type=pdf" target=blank>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1090.4584&rep=rep1&type=pdf</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=padding-64 style=max-width:860px id=SHOWCASE>
+<div class="transparent round box">
+<h2 class="wide padding-16">SHOWCASE</h2>
+ARCU&OHM carry out a variety of activities, including consultancy for cultural institutions and companies, development of curatorial software tools and prototypes, machine-aided exhibition-making and PhD research.
+<div id=exhibitions class=padding-64>
+<h3 class="wide padding-16">Exhibition Making</h3>
+<div class=slider-exh>
+<div>
+One of the main goals of museums and many other cultural institutions is to communicate the curatorial and scientific research to an audience. The development and practical implementation of experimental new methods for machine-assisted exhibition programming are therefore one of the most important activities of ARCU&OHM. Together with exhibition venues and institutions, curatorial concepts and final exhibitions are produced, based on computational methods such as machine learning and network science.
+</div>
+<div>
+<img src=img/exhibition-01.jpg alt="exhibition view: kunst(re_public)" style=width:100%>
+</div>
+<div>
+<h6>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</h6>
 <br><br>
-In this first-of-its-kind, algorithmically-curated art exhibition, the viewer can see works selected from the inventory of purchase awards from the Cultural Foundation of the Free State of Saxony.</div><div>
-<img src=img/exhibition-publication.png alt="exhibition view: kunst(re_public)" style=width:100%></div><div>
+In this first-of-its-kind, algorithmically-curated art exhibition, the viewer can see works selected from the inventory of purchase awards from the Cultural Foundation of the Free State of Saxony.
+</div>
+<div>
+<img src=img/exhibition-publication.png alt="exhibition view: kunst(re_public)" style=width:100%>
+</div>
+<div>
 First, a semantic network was created using the metadata from over 370 works (purchase awards from 2011-2019). The network was then searched for patterns using methods from graph theory. The result was a selection of works related to each other through socio-political topics. The next step of the experiment is to discuss whether this purely data-based curation produced a meaningful exhibition.
 <br><br>
-<a href=https://issuu.com/halle14/docs/dokumentation_kunstrepublic_stand_22-4-2021_issuu/38 target=blank class=key>view exhibition publication</a></div><div>
+<a href=https://issuu.com/halle14/docs/dokumentation_kunstrepublic_stand_22-4-2021_issuu/38 target=blank class=key>view exhibition publication</a>
+</div>
+<div>
 <img src=img/exhibition-08.jpg alt="exhibition view: kunst(re_public)" style=width:100%>
-<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption></div><div>
+<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption>
+</div>
+<div>
 <img src=img/exhibition-09.jpg alt="exhibition view: kunst(re_public)" style=width:100%>
-<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption></div><div>
+<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption>
+</div>
+<div>
 <img src=img/exhibition-10.jpg alt="exhibition view: kunst(re_public)" style=width:100%>
-<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption></div><div>
+<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption>
+</div>
+<div>
 <img src=img/exhibition-11.jpg alt="exhibition view: kunst(re_public)" style=width:100%>
-<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption></div><div>
+<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption>
+</div>
+<div>
 <img src=img/exhibition-02.jpg alt="exhibition view: kunst(re_public)" style=width:100%>
-<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption></div><div>
+<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption>
+</div>
+<div>
 <img src=img/exhibition-06.jpg alt="exhibition view: kunst(re_public)" style=width:100%>
-<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption></div><div><div class=references><h6>Participating artists:</h6><br>
+<figcaption>ARCU&OHM @ KUNST(re_public), HALLE 14 Center for Contemporary Art Leipzig</figcaption>
+</div>
+<div>
+<div class=references>
+<h6>Participating artists:</h6><br>
 André Schulze,
 Dominik Meyer,
 Falk Haberkorn,
@@ -153,54 +269,135 @@ Nori Blume,
 Susanne Keichel,
 Ya-Wen Fu
 <br><br>
-Photo credits: HALLE 14 | Walter Le Kon (image no. 2-6)</div>
+Photo credits: HALLE 14 | Walter Le Kon (image no. 2-6)
+</div>
 <br>
-<a href=https://issuu.com/halle14/docs/dokumentation_kunstrepublic_stand_22-4-2021_issuu/38 target=blank class=key>view exhibition publication</a></div></div></div><div id=tools class=padding-64><h3 class="wide padding-16">Tools & Applications</h3><div class=slider-tls><div>
-The development of software interfaces for collaborative human-machine curation, combined with research in <em>Human-Computer Interaction (HCI)</em>, provides ARCU&OHM with a broad repertoire of <em>curatorial software prototyping</em>, custom solutions for museums, archives and exhibition venues, applications for collections and exhibition making, interactive artworks and curatorial experiments.</div><div>
-<img src=img/applications-01.jpg alt="tools & application: interactive web application" style=width:100%></div><div><h5>Interactive web application for the Cultural Foundation of the Free State of Saxony</h5>
+<a href=https://issuu.com/halle14/docs/dokumentation_kunstrepublic_stand_22-4-2021_issuu/38 target=blank class=key>view exhibition publication</a>
+</div>
+</div>
+</div>
+<div id=tools class=padding-64>
+<h3 class="wide padding-16">Tools & Applications</h3>
+<div class=slider-tls>
+<div>
+The development of software interfaces for collaborative human-machine curation, combined with research in <em>Human-Computer Interaction (HCI)</em>, provides ARCU&OHM with a broad repertoire of <em>curatorial software prototyping</em>, custom solutions for museums, archives and exhibition venues, applications for collections and exhibition making, interactive artworks and curatorial experiments.
+</div>
+<div>
+<img src=img/applications-01.jpg alt="tools & application: interactive web application" style=width:100%>
+</div>
+<div>
+<h5>Interactive web application for the Cultural Foundation of the Free State of Saxony</h5>
 <br>
-In cooperation with the Art Fund of the Dresden State Art Collections, ARCU&OHM created a curatorial classification as well as an algorithmic selection of over 370 artworks from the collection of the Cultural Foundation of the Free State of Saxony. In this interactive network visualization, visitors can discover annual grant acquisitions from 2011 to 2019 and explore the generated semantic connections.</div><div>
+In cooperation with the Art Fund of the Dresden State Art Collections, ARCU&OHM created a curatorial classification as well as an algorithmic selection of over 370 artworks from the collection of the Cultural Foundation of the Free State of Saxony. In this interactive network visualization, visitors can discover annual grant acquisitions from 2011 to 2019 and explore the generated semantic connections.
+</div>
+<div>
 <img src=img/applications-02.jpg alt="tools & application: interactive web application art fund dresden" style=width:100%>
-<figcaption>Interactive web application for the Cultural Foundation of the Free State of Saxony</figcaption></div><div><h5>Collection Software Prototypes</h5>
+<figcaption>Interactive web application for the Cultural Foundation of the Free State of Saxony</figcaption>
+</div>
+<div>
+<h5>Collection Software Prototypes</h5>
 <br>
-Ongoing research and experimentation of future curatorial software tools and human-machine interfaces. The findings are used to create early prototypes and custom-made applications for archives and museums.</div><div>
+Ongoing research and experimentation of future curatorial software tools and human-machine interfaces. The findings are used to create early prototypes and custom-made applications for archives and museums.
+</div>
+<div>
 <img src=img/applications-03.jpg alt="tools & application: prototyping" style=width:100%>
-<figcaption>Collection Software Prototype for Curation and Exploration</figcaption></div><div><h5>Le #museeimaginaire</h5>
+<figcaption>Collection Software Prototype for Curation and Exploration</figcaption>
+</div>
+<div>
+<h5>Le #museeimaginaire</h5>
 <b>Computer vision selected Instagram feeds</b>
 <br><br>
 Livestreams of popular artworks collectively reproduced by social media users.
 A contemporary virtual version of Le Musée Imaginaire – the imaginary museum.
 <br><br>
-<a href=http://museeimaginaire.tillmannohm.com/ target=blank class=key>enter the artwork</a></div><div><div style=height:230px;;position:relative><iframe src="https://player.vimeo.com/video/286404759?autoplay=0&loop=1&title=0&byline=0&portrait=0" style=position:absolute;top:0;left:0;width:100%;height:100% frameborder=0 allowfullscreen></iframe></div>
-<figcaption style=text-align:center>Le #museeimaginaire, 2018</figcaption></div></div></div>
-<br><br><div id=research class=padding-64><h3 class="wide padding-16">Research & Publications</h3><div class=slider-res><div>
-Initially started as an art project at <a href=https://www.uni-weimar.de/en target=blank>Bauhaus University Weimar</a> in 2016, ARCU&OHM became a <em>Cultural Analysis</em> research and development project at <a href=https://cudan.tlu.ee target=blank>CUDAN</a> and <a href=https://www.tlu.ee/en target=blank>Tallinn University</a>. Academic research, in the context of the doctoral studies <em>Information Society Technologies</em>, is carried out in form of scientific publications as well as artistic research results.</div><div>
-<img src=img/the-artists-machine-1-sm.jpg alt="The Artist's Machine, cover" style=width:100%></div><div><h6>»The Artist's Machine« generated by ARCU</h6>
+<a href=http://museeimaginaire.tillmannohm.com/ target=blank class=key>enter the artwork</a>
+</div>
+<div>
+<div style=height:230px;;position:relative><iframe src="https://player.vimeo.com/video/286404759?autoplay=0&loop=1&title=0&byline=0&portrait=0" style=position:absolute;top:0;left:0;width:100%;height:100% frameborder=0 allowfullscreen></iframe></div>
+<figcaption style=text-align:center>Le #museeimaginaire, 2018</figcaption>
+</div>
+</div>
+</div>
+<br><br>
+<div id=research class=padding-64>
+<h3 class="wide padding-16">Research & Publications</h3>
+<div class=slider-res>
+<div>
+Initially started as an art project at <a href=https://www.uni-weimar.de/en target=blank>Bauhaus University Weimar</a> in 2016, ARCU&OHM became a <em>Cultural Analysis</em> research and development project at <a href=https://cudan.tlu.ee target=blank>CUDAN</a> and <a href=https://www.tlu.ee/en target=blank>Tallinn University</a>. Academic research, in the context of the doctoral studies <em>Information Society Technologies</em>, is carried out in form of scientific publications as well as artistic research results.
+</div>
+<div>
+<img src=img/the-artists-machine-1-sm.jpg alt="The Artist's Machine, cover" style=width:100%>
+</div>
+<div>
+<h6>»The Artist's Machine« generated by ARCU</h6>
 <br>
-The Artist’s Machine is a computational research project with the outcome of a publication, generated by ARCU. From researching topic-relevant literature, detecting semantic structures in hundreds of papers and books, to finally generating a publication with illustrations and paraphrased text citations, every step in the process has been performed automatically – initiated by a simple research phrase that was given as input.</div><div><div style=height:230px;position:relative><iframe src="https://player.vimeo.com/video/319323848?title=0&byline=0&portrait=0" style=position:absolute;top:0;left:0;width:100%;height:100% frameborder=0 allowfullscreen></iframe></div>
-<figcaption>The Artist’s Machine, method demonstration</figcaption></div><div>
+The Artist’s Machine is a computational research project with the outcome of a publication, generated by ARCU. From researching topic-relevant literature, detecting semantic structures in hundreds of papers and books, to finally generating a publication with illustrations and paraphrased text citations, every step in the process has been performed automatically – initiated by a simple research phrase that was given as input.
+</div>
+<div>
+<div style=height:230px;position:relative><iframe src="https://player.vimeo.com/video/319323848?title=0&byline=0&portrait=0" style=position:absolute;top:0;left:0;width:100%;height:100% frameborder=0 allowfullscreen></iframe></div>
+<figcaption>The Artist’s Machine, method demonstration</figcaption>
+</div>
+<div>
 The main focus of this project is to develop a method for computational text curation and automated research, an experimental artistic use case for established Machine Learning services, search engines and databases.
 <br><br>
 <a href=https://thesiscommons.org/tj6yf/download target=blank class=key>download PDF</a>
 <br>
-<a href=mailto:mail@tillmannohm.com target=blank class=key>purchase book</a></div><div><div style=height:230px;position:relative><iframe src="https://player.vimeo.com/video/282210599?autoplay=0&title=0&byline=0&portrait=0&maxheight=200" style=position:absolute;top:0;left:0;width:100%;height:100% frameborder=0 allowfullscreen></iframe></div>
-<figcaption style=text-align:center>The Artist’s Machine, flip trough</figcaption></div><div>
+<a href=mailto:mail@tillmannohm.com target=blank class=key>purchase book</a>
+</div>
+<div>
+<div style=height:230px;position:relative><iframe src="https://player.vimeo.com/video/282210599?autoplay=0&title=0&byline=0&portrait=0&maxheight=200" style=position:absolute;top:0;left:0;width:100%;height:100% frameborder=0 allowfullscreen></iframe></div>
+<figcaption style=text-align:center>The Artist’s Machine, flip trough</figcaption>
+</div>
+<div>
 <a href=https://twitter.com/A_R_C_U target=blank><h6>ARCU on Twitter</h6></a>
 <br>
 Researching in the thematic field of artificial intelligence in contemporary and future art, ARCU shares relevant news, projects and articles with the world on a daily basis on Twitter algorithmically.
 ARCU maintains and slowly expands its own network of artists and researchers on Twitter to gather and share relevant information about recent articles, artworks, research projects and events.
-<br><a href=https://twitter.com/A_R_C_U target=blank class=key>go to Twitter profile</a></div><div>
+<br><a href=https://twitter.com/A_R_C_U target=blank class=key>go to Twitter profile</a>
+</div>
+<div>
 <img src=img/arcu-twitter.jpg alt="ARCU on Twitter" style=width:100%>
-<figcaption>ARCU on Twitter</figcaption></div></div></div></div><div class=padding-64 style=max-width:860px id=CONTACT><div class="transparent round box" style=position:relative><h2 class=wide>CONTACT</h2><div class="row padding-32"><div class="large distance">
+<figcaption>ARCU on Twitter</figcaption>
+</div>
+</div>
+</div>
+</div>
+<div class=padding-64 style=max-width:860px id=CONTACT>
+<div class="transparent round box" style=position:relative>
+<h2 class=wide>CONTACT</h2>
+<div class="row padding-32">
+<div class="large distance">
 <a href=mailto:mail@arcu-ohm.com><i class="fa fa-envelope" style=width:30px> </i> mail@arcu-ohm.com<br></a>
 <a href=https://twitter.com/A_R_C_U target=blank><i class="fa fa-twitter" style=width:30px> </i> ARCU on Twitter<br></a>
-<a href=https://twitter.com/tillmannohm target=blank><i class="fa fa-twitter" style=width:30px> </i> OHM on Twitter<br></a></div><div class=contact>
-<img src=img/arcu-ohm.svg alt="ARCU@OHM logo" style=max-height:150px></div></div></div></div><div id=research class=padding-64 style=padding-bottom:64px><div class="transparent round box"><h3 class="wide padding-16">Funding & Clients</h3><div class=slider-fund><div>
+<a href=https://twitter.com/tillmannohm target=blank><i class="fa fa-twitter" style=width:30px> </i> OHM on Twitter<br></a>
+</div>
+<div class=contact>
+<img src=img/arcu-ohm.svg alt="ARCU@OHM logo" style=max-height:150px>
+</div>
+</div>
+</div>
+</div>
+<div id=research class=padding-64 style=padding-bottom:64px>
+<div class="transparent round box">
+<h3 class="wide padding-16">Funding & Clients</h3>
+<div class=slider-fund>
+<div>
 <img src=img/funding.png alt="Research Funding" style=width:100%;margin-bottom:26px>
-<figcaption>Research and project funding previously received from: Cultural Data Analytics, CUDAN (European Commission, Horizon 2020); Tallinn University, School of Digital Technologies; Bauhaus University Weimar, Research School; Cultural Foundation of the Free State of Saxony</figcaption></div><div>
+<figcaption>Research and project funding previously received from: Cultural Data Analytics, CUDAN (European Commission, Horizon 2020); Tallinn University, School of Digital Technologies; Bauhaus University Weimar, Research School; Cultural Foundation of the Free State of Saxony</figcaption>
+</div>
+<div>
 <img src=img/clients.png alt="Clients & Partners" style=width:100%;margin-bottom:26px>
-<figcaption>Tools, exhibitions and consulting projects previously developed for and with: Dresden State Art Collection; HALLE 14 Center for Contemporary Art Leipzig; Marketing Center Münster; LOOKSfilm/Progress</figcaption></div></div></div></div></div></div></div></body>
-<footer class="container padding-32 center transparent" style=padding-bottom:32px><h5>© 2021 ARCU&OHM</h5>
+<figcaption>Tools, exhibitions and consulting projects previously developed for and with: Dresden State Art Collection; HALLE 14 Center for Contemporary Art Leipzig; Marketing Center Münster; LOOKSfilm/Progress</figcaption>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<footer class="container padding-32 center transparent" style=padding-bottom:32px>
+<h5>© 2021 ARCU&OHM</h5>
 </footer>
 <script>s=new sigma({graph:data,container:'graph-container',settings:{animationsTime:2000,edgeColor:'default',defaultEdgeColor:'#F9D676',mouseWheelEnabled:false,nodesPowRatio:1,edgesPowRatio:1,mouseEnabled:false,touchEnabled:false,autoRescale:false},renderer:{container:document.getElementById('graph-container'),type:'canvas'},});var winHeight=document.getElementById("graph-container").clientHeight+91+60;var winWidth=document.getElementById("graph-container").clientWidth;var support=CSS.supports("backdrop-filter: blur(2px)")|CSS.supports("-webkit-backdrop-filter: blur(2px)");var scrollSmooth=CSS.supports("scroll-behavior: smooth");function clamp(value,min,max){return Math.min(Math.max(value,min),max);}
 var scrollWait=false;var oldScroll=0;window.onscroll=function(e){this.scrollDiff=this.scrollY-oldScroll;if(scrollWait==false){if(window.scrollY<1){animateLogo(0);}else{if(scrollDiff<0){if(this.scrollY<200){animateLogo(0);}else{scrollLogo(0,this.scrollY);}};if(scrollDiff>0){if(scrollSmooth==0&&this.scrollY>600){animateLogo(1);}else{if(this.scrollY<200){scrollLogo(1,this.scrollY);}else{scrollLogo(1,this.scrollY);}};if(support==0){document.getElementById("graph-container").style.filter="blur(0.7px)"};}};oldScroll=this.scrollY;}};function animateLogo(direction){if(direction==1){scrollWait=true};sigma.plugins.animate(s,{x:"x"+direction,y:"y"+direction,size:"size"+direction,color:"color"+direction},{onComplete:function(){scrollWait=false;if(support==0&&direction==0){document.getElementById("graph-container").style.filter="blur(0px)"};},})};function scrollLogo(direction,resFactor){var resolution=Math.max(resFactor/winHeight,0.03);sigma.plugins.scroll(s,{x:"x"+direction,y:"y"+direction,size:"size"+direction,color:"color1"},{res:resolution,factor:0.1})};function resize(){var cam_y=(document.getElementById("graph-container").clientHeight/2)-120
@@ -208,4 +405,5 @@ s.cameras[0].goTo({x:148.6,y:cam_y,angle:0,ratio:1});console.log("resized")};s.g
 node.x1=winHeight*node.x1;node.y1=winHeight*node.y1;});window.addEventListener('resize',function(event){resize();s.refresh();},true);window.addEventListener("load",function(event){resize();s.refresh();},true);function closeMenu(){var x=document.getElementById("navDemo");if(x.className.indexOf("show")==-1){x.className+=" show";}else{x.className=x.className.replace(" show","");animateLogo(1);}}
 var modal=document.getElementById('ticketModal');window.onclick=function(event){if(event.target==modal){modal.style.display="none";}}
 var slider_exh=tns({container:'.slider-exh',controlsText:['&#10094; prev','next &#10095;'],swipeAngle:40,preventScrollOnTouch:'auto',slideBy:"page",navPosition:'bottom',controlsPosition:'bottom',gutter:60,loop:false,responsive:{0:{items:1},601:{items:2}}});var slider_tls=tns({container:'.slider-tls',controlsText:['&#10094; prev','next &#10095;'],swipeAngle:40,preventScrollOnTouch:'auto',slideBy:"page",navPosition:'bottom',controlsPosition:'bottom',gutter:60,loop:false,responsive:{0:{items:1},601:{items:2}}});var slider_res=tns({container:'.slider-res',controlsText:['&#10094; prev','next &#10095;'],swipeAngle:40,preventScrollOnTouch:'auto',slideBy:"page",navPosition:'bottom',controlsPosition:'bottom',gutter:60,loop:false,responsive:{0:{items:1},601:{items:2}}});var slider_fund=tns({container:'.slider-fund',controlsText:['&#10094; Funding','Clients &#10095;'],swipeAngle:40,preventScrollOnTouch:'auto',slideBy:"page",navPosition:'bottom',controlsPosition:'bottom',gutter:60,loop:false,responsive:{0:{items:1},601:{items:2}}});var slider_methods=tns({container:'.slider-methods',controlsText:['&#10094; back','continue &#10095;'],swipeAngle:40,preventScrollOnTouch:'auto',slideBy:"page",navPosition:'bottom',controlsPosition:'bottom',gutter:60,loop:false,responsive:{0:{items:1},601:{items:2}}});var slider_about=tns({container:'.slider-about',mode:"gallery",controlsText:['[less]','[more]'],controlsPosition:'bottom',nav:false,autoHeight:true,loop:false,items:1});var triggerResize=function(){setTimeout(()=>{resize();},1);};slider_about.events.on('indexChanged',triggerResize);var scrollSteps=1/(document.body.scrollHeight-document.body.offsetHeight);</script>
-<script>document.onreadystatechange=function(){if(document.readyState!=="complete"){document.querySelector("body").style.visibility="hidden";document.querySelector("#loader").style.visibility="visible";}else{document.querySelector("#loader").style.display="none";document.querySelector("body").style.visibility="visible";}};</script></html>
+<script>document.onreadystatechange=function(){if(document.readyState!=="complete"){document.querySelector("body").style.visibility="hidden";document.querySelector("#loader").style.visibility="visible";}else{document.querySelector("#loader").style.display="none";document.querySelector("body").style.visibility="visible";}};</script>
+</html>
